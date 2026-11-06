@@ -1,0 +1,97 @@
+{
+ "dataset": "data/Xenium_Prime_Human_Skin_FFPE",
+ "radius_um": 50,
+ "clusters": {
+  "1": "Melanoma",
+  "2": "Melanoma",
+  "6": "Melanoma",
+  "10": "Melanoma",
+  "3": "T/NK",
+  "13": "Lymphocyte",
+  "24": "T IFNG+",
+  "4": "Macrophage",
+  "7": "Macrophage",
+  "18": "Macrophage",
+  "23": "Macrophage",
+  "8": "Fibroblast",
+  "15": "Fibroblast",
+  "17": "Fibroblast",
+  "14": "Pericyte",
+  "19": "Endothelial",
+  "12": "Plasma",
+  "9": "Proliferating",
+  "21": "Proliferating",
+  "22": "Proliferating",
+  "25": "Proliferating",
+  "20": "Keratinocyte",
+  "26": "Keratinocyte",
+  "27": "Keratinocyte",
+  "28": "Keratinocyte",
+  "29": "Mast"
+ },
+ "auto": {
+  "sizes_um": [
+   300,
+   340,
+   380,
+   420,
+   460,
+   500,
+   540,
+   580
+  ],
+  "cells": [
+   800,
+   950
+  ],
+  "objective": {
+   "gene:IFNG": 1,
+   "gene:CXCL9": 6,
+   "gene:CXCL10": 4,
+   "gene:IFNGR1": 8
+  }
+ },
+ "lr": [
+  [
+   "IFNG",
+   "IFNGR1"
+  ],
+  [
+   "CXCL9",
+   "CXCR3"
+  ],
+  [
+   "CXCL10",
+   "CXCR3"
+  ],
+  [
+   "CXCL11",
+   "CXCR3"
+  ],
+  [
+   "TNF",
+   "TNFRSF1A"
+  ],
+  [
+   "IL1B",
+   "IL1R1"
+  ],
+  [
+   "TGFB1",
+   "TGFBR2"
+  ],
+  [
+   "CXCL12",
+   "CXCR4"
+  ],
+  [
+   "IL6",
+   "IL6R"
+  ]
+ ],
+ "min_counts": 20,
+ "min_detection": 0.003,
+ "max_tfs": 2,
+ "cellcall": "data/cellcall_human_LR_TF.txt",
+ "collectri": "data/collectri.tsv"
+}
